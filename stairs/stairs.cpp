@@ -107,7 +107,7 @@ int main(){
         std::cout << "\nGoing up!\n\n";
         for (int i=0; i <steps; i++){    
             while (j<=i){
-                std::cout << std::string(k,space) << std::string(j+1,symb) << " " << std::string(j+1, symb);
+                std::cout << std::string(k,space) << std::string(j+1,symb) << "\t" << std::string(j+1, symb);
                 j++; k--;
             }
             std::cout << "\n";
@@ -120,7 +120,7 @@ int main(){
         std::cout << "\nGoing down!\n\n";
         for (int i=0; i <(steps*(-1)); i++){    
             while (j<=i){
-                std::cout << std::string(j+1, symb) << std::string(k,space) << " " << std::string(k,space) << std::string(j+1,symb);
+                std::cout << std::string(j+1, symb) << std::string(k,space) << "\t" << std::string(k,space) << std::string(j+1,symb);
                 j++; k--;
             }
             std::cout << "\n";
@@ -155,5 +155,9 @@ int main(){
         std::cin.ignore(std::numeric_limits<std::streamsize>::max()), '\n') this would be better however with this line, the loop doesnt ask for user input again
         std::c
             
+            
+            
+  -----------------------------------
+    *next steps in program is to make a sepeate function for input validation
 
 */
